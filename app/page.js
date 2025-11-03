@@ -26,9 +26,9 @@ export default function Home() {
       </div>
 
       <div className={styles.links}>
-        {links.map((link, index) => (
+        {links.map((link) => (
           <a
-            key={index}
+            key={link.url}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
