@@ -1,0 +1,12 @@
+export const metadata = {
+  title: 'My Links | LinksBio',
+  description: 'All my links in one place',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
