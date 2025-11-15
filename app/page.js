@@ -4,13 +4,13 @@ import styles from './page.module.css'
 export default function Home() {
   const links = [
     {
-      title: '🛍️ My E-Commerce Store',
-      url: 'https://example.com/store',
+      title: '🛍️ Jokez Shop',
+      url: 'https://www.jokez.shop',
       description: 'Shop my latest products'
     },
     {
       title: '😂 My Joke Website',
-      url: 'https://example.com/jokes',
+      url: 'https://www.degenjokez.xyz',
       description: 'Laugh with my daily jokes'
     }
   ]
