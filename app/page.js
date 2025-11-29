@@ -12,6 +12,10 @@ export default function Home() {
       title: '😂 My Joke Website',
       url: 'https://www.degenjokez.xyz',
       description: 'Laugh with my daily jokes'
+    },
+      title: '💰 Crypto Site (Testnet)',
+      url: 'https://www.yielddelta.xyz',
+      description: 'Test out AI powered liquidity Vaults'
     }
   ]
 
