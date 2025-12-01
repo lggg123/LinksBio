@@ -100,8 +100,11 @@
   transform: scale(0.95);
 }
 
-.avatarEmoji {
-  font-size: 70px;
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .name {
@@ -501,9 +504,6 @@
     height: 130px;
   }
 
-  .avatarEmoji {
-    font-size: 55px;
-  }
 
   .blob1,
   .blob2,

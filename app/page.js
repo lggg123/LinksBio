@@ -55,7 +55,11 @@ export default function Home() {
           <div className={styles.avatarWrapper}>
             <div className={styles.avatarRing}></div>
             <div className={styles.avatar}>
-              <span className={styles.avatarEmoji}>👋</span>
+              <img
+                src="/avatar.svg"
+                alt="Profile Avatar"
+                className={styles.avatarImage}
+              />
             </div>
           </div>
           <h1 className={styles.name}>Hey, I'm Your Name!</h1>
