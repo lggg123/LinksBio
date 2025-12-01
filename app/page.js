@@ -1,6 +1,10 @@
 import './globals.css'
 import styles from './page.module.css'
 
+// Animation timing constants
+const CATEGORY_ANIMATION_DELAY = 0.1 // seconds delay between category groups
+const LINK_ANIMATION_DELAY = 0.05 // seconds delay between links within a category
+
 export default function Home() {
   // Profile configuration - easily customizable
   const profile = {
@@ -101,7 +105,8 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.linkCard}
-                  style={{ animationDelay: `${(categoryIndex * 0.1) + (linkIndex * 0.05)}s` }}
+                  style={{ animationDelay: `${(categoryIndex * CATEGORY_ANIMATION_DELAY) + (linkIndex * LINK_ANIMATION_DELAY)}s` }}
+                  title={link.description}
                 >
                   <span className={styles.linkIcon}>{link.icon}</span>
                   <div className={styles.linkContent}>
