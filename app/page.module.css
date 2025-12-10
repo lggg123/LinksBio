@@ -31,7 +31,7 @@
 .blob1 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #7e22ce 0%, #c026d3 100%);
   top: -100px;
   left: -100px;
   animation-delay: 0s;
@@ -40,7 +40,7 @@
 .blob2 {
   width: 500px;
   height: 500px;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #e879f9 0%, #c026d3 100%);
   bottom: -150px;
   right: -150px;
   animation-delay: -7s;
@@ -49,7 +49,7 @@
 .blob3 {
   width: 450px;
   height: 450px;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #2a5298 0%, #7e22ce 100%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -182,25 +182,26 @@
 
 .socialGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  max-width: 480px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  max-width: 540px;
   margin: 0 auto;
 }
 
 .socialButton {
   aspect-ratio: 1;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  border: 2px solid transparent;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 3px solid transparent;
   position: relative;
   overflow: hidden;
+  min-height: 90px;
 }
 
 .socialButton::before {
@@ -223,7 +224,7 @@
 }
 
 .socialIcon {
-  font-size: 28px;
+  font-size: 40px;
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease;

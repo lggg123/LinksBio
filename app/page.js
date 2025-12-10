@@ -34,12 +34,11 @@ export default function Home() {
   ]
 
   const socialLinks = [
-    { name: 'Twitter', icon: '𝕏', url: '#', color: '#000000' },
-    { name: 'Instagram', icon: '📷', url: '#', color: '#E4405F' },
-    { name: 'YouTube', icon: '▶️', url: '#', color: '#FF0000' },
-    { name: 'TikTok', icon: '🎵', url: '#', color: '#000000' },
-    { name: 'Discord', icon: '💬', url: '#', color: '#5865F2' },
-    { name: 'GitHub', icon: '⚡', url: '#', color: '#333333' }
+    { name: 'X (Twitter)', icon: '𝕏', url: 'https://www.x.com/glugo21', color: '#000000' },
+    { name: 'Instagram', icon: '📷', url: 'https://www.instagram.com/glugo123', color: '#E4405F' },
+    { name: 'YouTube', icon: '▶️', url: 'https://youtube.co/@foolishloco', color: '#FF0000' },
+    { name: 'TikTok', icon: '🎵', url: 'https://www.tiktok.com/@degenjokez', color: '#000000' },
+    { name: 'Snapchat', icon: '👻', url: 'https://snapchat.com/t/qyfU2uRR', color: '#FFFC00' }
   ]
 
   return (
@@ -68,8 +67,8 @@ export default function Home() {
           </p>
           <div className={styles.stats}>
             <div className={styles.statItem}>
-              <span className={styles.statNumber}>10K+</span>
-              <span className={styles.statLabel}>Followers</span>
+              <span className={styles.statNumber}>26K+</span>
+              <span className={styles.statLabel}>TikTok</span>
             </div>
             <div className={styles.statDivider}></div>
             <div className={styles.statItem}>
