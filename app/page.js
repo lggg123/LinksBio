@@ -1,5 +1,6 @@
 import './globals.css'
 import styles from './page.module.css'
+import { FaXTwitter, FaInstagram, FaYoutube, FaTiktok, FaSnapchat } from 'react-icons/fa6'
 
 export default function Home() {
   const links = [
@@ -34,11 +35,11 @@ export default function Home() {
   ]
 
   const socialLinks = [
-    { name: 'X (Twitter)', icon: '𝕏', url: 'https://www.x.com/glugo21', color: '#000000' },
-    { name: 'Instagram', icon: '📷', url: 'https://www.instagram.com/glugo123', color: '#E4405F' },
-    { name: 'YouTube', icon: '▶️', url: 'https://youtube.co/@foolishloco', color: '#FF0000' },
-    { name: 'TikTok', icon: '🎵', url: 'https://www.tiktok.com/@degenjokez', color: '#000000' },
-    { name: 'Snapchat', icon: '👻', url: 'https://snapchat.com/t/qyfU2uRR', color: '#FFFC00' }
+    { name: 'X (Twitter)', Icon: FaXTwitter, url: 'https://www.x.com/glugo21', color: '#000000' },
+    { name: 'Instagram', Icon: FaInstagram, url: 'https://www.instagram.com/glugo123', color: '#E4405F' },
+    { name: 'YouTube', Icon: FaYoutube, url: 'https://youtube.co/@foolishloco0', color: '#FF0000' },
+    { name: 'TikTok', Icon: FaTiktok, url: 'https://www.tiktok.com/@degenjokez', color: '#000000' },
+    { name: 'Snapchat', Icon: FaSnapchat, url: 'https://snapchat.com/t/qyfU2uRR', color: '#FFFC00' }
   ]
 
   return (
@@ -86,19 +87,22 @@ export default function Home() {
         <div className={styles.socialMedia}>
           <h2 className={styles.sectionTitle}>Connect With Me</h2>
           <div className={styles.socialGrid}>
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialButton}
-                style={{ '--social-color': social.color }}
-                title={social.name}
-              >
-                <span className={styles.socialIcon}>{social.icon}</span>
-              </a>
-            ))}
+            {socialLinks.map((social) => {
+              const IconComponent = social.Icon
+              return (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialButton}
+                  style={{ '--social-color': social.color }}
+                  title={social.name}
+                >
+                  <IconComponent className={styles.socialIcon} />
+                </a>
+              )
+            })}
           </div>
         </div>
 
