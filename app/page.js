@@ -62,9 +62,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <h1 className={styles.name}>Hey, I'm Your Name!</h1>
+          <h1 className={styles.name}>Hey, I'm George!</h1>
           <p className={styles.bio}>
-            Content Creator • Entrepreneur • Tech Enthusiast
+             Dark Comedian • AI Engineer 
           </p>
           <div className={styles.stats}>
             <div className={styles.statItem}>
